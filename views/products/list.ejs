@@ -1,0 +1,21 @@
+<h3>Listagem de roupas</h3>
+
+<table class="table table-condensed table-bordered table-striped table-hover"></table>
+<thead>
+    <tr>
+        <td>Titulo</td>
+        <td>Preco</td>
+        <td>Descricao</td>
+    </tr>
+</thead>
+    <tbody>
+        <table>
+            <% for(var i=0; i<list.length; i++) {%>
+                <tr>
+                    <td><%= list[i].titulo %></td>
+                    <td><%= list[i].preco %></td>
+                    <td><p><%= list[i].descricao %></p></td>
+                </tr>    
+            <%} %>
+        </table>
+    </tbody>
