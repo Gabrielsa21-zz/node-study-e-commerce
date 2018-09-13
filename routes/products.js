@@ -7,9 +7,9 @@ module.exports = function (app) {
 
         var connection = connectionFactory()
         
-        var produtoDao = new produtoDao(connection) //produtoDao is not a constructor
+        var produto = new produtoDao(connection) //produtoDao is not a constructor
 
-        produtoDao.lista(function (err, result, fields) {
+        produto.lista(function (err, result, fields) {
                 res.render('products/list', {list: result})
             }
         )
