@@ -6,8 +6,8 @@
 //     return this._connection.query('select * from roupas', callback)
 // }
 
-class ProdutoDao{
-    constructor(connection){
+class ProdutoDao {
+    constructor(connection) {
         this._connection = connection
     }
 
@@ -15,6 +15,6 @@ class ProdutoDao{
         return this._connection.query('select * from roupas', callback)
     }
 }
-module.exports = ProdutoDao
+module.exports = function () { ProdutoDao }
 
 

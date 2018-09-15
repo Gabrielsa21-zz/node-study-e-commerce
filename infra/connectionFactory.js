@@ -10,4 +10,4 @@ function createConnection() {
     });
 }
 
-module.exports = createConnection;
+module.exports = function () { createConnection }
