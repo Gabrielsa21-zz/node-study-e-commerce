@@ -1,7 +1,7 @@
 
 module.exports = function (app) {
     app.get('/produtos', (req, res) => {
-        console.log("router")
+        console.log("router", app.infra)
 
         var connection = app.infra.connectionFactory()
         

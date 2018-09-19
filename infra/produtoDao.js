@@ -1,12 +1,5 @@
-// function ProdutoDao(connection) {
-//     this._connection = connection
-// }
 
-// ProdutoDao.prototype.lista = function (callback) {
-//     return this._connection.query('select * from roupas', callback)
-// }
-
-class ProdutoDao {
+module.exports = class ProdutoDao {
     constructor(connection) {
         this._connection = connection
     }
@@ -15,6 +8,3 @@ class ProdutoDao {
         return this._connection.query('select * from roupas', callback)
     }
 }
-module.exports = function () { ProdutoDao }
-
-
