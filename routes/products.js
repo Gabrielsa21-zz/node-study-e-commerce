@@ -11,7 +11,22 @@ module.exports = function (app) {
                 res.render('products/list', {list: result})
             }
         )
-
         connection.end()
+    })
+
+    app.get('/produtos/form', function(req, res) {
+        res.render('produtos/form')
+    })
+
+    app.post('/produtos', function (req, res) {
+        var clother = req.body
+
+        var connection = app.infra.connectionFactory()
+        
+        var produto = new app.infra.produtoDao(connection)
+
+        produto.salva(clother, function (exception, result) {
+            res.render('produtos/salvo')
+        })
     })
 }

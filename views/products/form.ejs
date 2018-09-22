@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de Cadastro</title>
+</head>
+
+<body>
+    <form action="/produtos" method="POST" class="well" role="form">
+        <div class="form-group">
+            <label for="titulo">Titulo do livro</label>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-unchecked"></i>
+                </span>
+                <input type="text" name="titulo" id="titulo" class="form-control" placeholder="titulo do livro">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="preco">Preço</label>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-unchecked"></i>
+                </span>
+                <input type="text" name="preco" id="preco" class="form-control" placeholder="valor do livro">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="descricao">Descrição</label>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-unchecked"></i>
+                </span>
+                <textarea name="" id="descricao" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </form>
+</body>
+
+</html>
