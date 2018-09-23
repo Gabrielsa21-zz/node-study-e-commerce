@@ -1,6 +1,7 @@
 
 module.exports = function (app) {
     app.get('/produtos', (req, res) => {
+        console.log("estou em / produtos")
         console.log("router", app.infra)
 
         var connection = app.infra.connectionFactory()
