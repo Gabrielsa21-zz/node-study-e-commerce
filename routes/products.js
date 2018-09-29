@@ -27,7 +27,7 @@ module.exports = function (app) {
         var produto = new app.infra.produtoDao(connection)
 
         produto.salva(clother, function (exception, result) {
-            res.render('produtos/salvo')
+            res.redirect('produtos/salvo')
         })
     })
 }
